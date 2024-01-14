@@ -25,10 +25,10 @@ class NeuralNet:
         self.w2=np.random.randn(num,1)
         self.bias2=np.random.randn(1,1)
         # used by optimizer
-        self.avg_w1=np.ones(self.w1.shape)
-        self.avg_bias1=np.ones(self.bias1.shape)
-        self.avg_w2=np.ones(self.w2.shape)
-        self.avg_bias2=np.ones(self.bias2.shape)
+        self.avg_w1=np.zeros(self.w1.shape)
+        self.avg_bias1=np.zeros(self.bias1.shape)
+        self.avg_w2=np.zeros(self.w2.shape)
+        self.avg_bias2=np.zeros(self.bias2.shape)
         return None
     
     @staticmethod
